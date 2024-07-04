@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./reset.css"></link>
+  <link rel="stylesheet" href="./style.css"></link>
+  <script src="./main.js" defer></script>
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+  <div id="app">
+    <div id="header">
+      <img src="./images/logo.svg" alt="Rock, Paper, Scissors" />
+      <div id="score">
+        <p>SCORE</p>
+        <p id="score-number">0</p>
+      </div>
+    </div>
+
+    
+
+    <div id="step-1">
+      <div class="choice rock" id="step-1-rock">
+        <img src="./images/icon-rock.svg" alt="Rock" />
+      </div>
+      <div class="choice paper" id="step-1-paper">
+        <img src="./images/icon-paper.svg" alt="Paper" />
+      </div>
+      <div class="choice scissors" id="step-1-scissors">
+        <img src="./images/icon-scissors.svg" alt="Scissors" />
+      </div>
+    </div>
+
+    <div id="step-2" style="display: none;">
+      <div id="selection-you" class="selection">
+        <p>YOU PICKED</p>
+        <div id="you-choice" class="choice">
+        </div>
+      </div>
+
+      <div id="selection-house" class="selection">
+        <p>THE HOUSE PICKED</p>
+        <div id="house-choice" class="choice">
+        </div>
+      </div>
+    </div>
+
+    <div id="step-result" style="display: none;">
+      <div id="selection-you" class="selection">
+        <p>YOU PICKED</p>
+        <div id="you-choice-final" class="choice">
+        </div>
+      </div>
+
+      <div id="result-message" >
+        <p id="result-text">YOU'VE WON</p>
+        <div id="play-again">PLAY AGAIN</div>
+      </div>
+
+      <div id="selection-house" class="selection">
+        <p>THE HOUSE PICKED</p>
+        <div id="house-choice-final" class="choice">
+        </div>
+      </div>
+    </div>
+
+    <div id="rules">
+      <div id="rules-button">RULES</div>
+      <div id="rules-modal" style="display: none;">
+        <div id="rules-modal-content">
+          <div id="rules-modal-top">
+            <h2>RULES</h2>
+            <img src="./images/icon-close.svg" alt="Close" id="close-rules" />
+          </div>
+          <img src="./images/image-rules.svg" alt="Rules" />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
